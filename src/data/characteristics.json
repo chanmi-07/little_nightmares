@@ -1,0 +1,25 @@
+[
+    {
+        "id": 1,
+        "title": "Embark on a grim adventure",
+        "description": [
+            "Confront your childhood fears in this darkly whimsical tale, set in an immersive world of great sensibility, interactive storytelling and outstanding sound design.",
+            "Discover the foul secrets of The Maw and survive the attentions of its monstrous residents as you bid to help Six escape to the world outside."
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Rekindle your childhood fears",
+        "description": [
+            "Each room is a cell, each resident a threat, and both are puzzles to untangle. Reconnect with your inner child, unleash your imagination, and stay out of har's way.",
+            "Master Six's every movement in a super-sized world where even the smallest doubt can lead to a fatal misstep."
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Unveil the past of The Maw",
+        "description": [
+            "The Maw is a place of contrasts. Let your imagination guide you as you take your first steps in this eerie and unpredictable world."
+        ]
+    }
+]
