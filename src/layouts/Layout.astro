@@ -1,10 +1,11 @@
 ---
-import Header from "../components/Header.astro";
+import Header from "../components/Header";
 interface Props {
   title: string;
 }
 
 const { title } = Astro.props;
+import "../styles/global.css";
 ---
 
 <!doctype html>
@@ -18,7 +19,9 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body>
-    <Header />
-    <slot />
+    <main class="w-[1600px] max-w-full mx-auto">
+      <Header />
+      <slot />
+    </main>
   </body>
 </html>
