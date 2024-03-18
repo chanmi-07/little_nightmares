@@ -13,5 +13,9 @@ const headerLinks: HeaderLink[] = HeaderLinks;
 
 export default function Header(props: Props) {
   const { children } = props;
-  return <header className="sticky top-0 flex justify-between items-center py-2">{children}</header>;
+  return <header className="fixed w-screen">
+    <nav className="w-[1600px] max-w-full mx-auto flex justify-between items-center py-2 px-4">
+      {children}
+    </nav>
+  </header>;
 }
