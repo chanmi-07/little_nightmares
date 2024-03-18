@@ -1,0 +1,13 @@
+---
+type Props = {
+  link: string;
+  title: string;
+};
+const { link, title } = Astro.props;
+---
+
+<a
+  href={link}
+  target="_blank"
+  class="border border-neutral-400 px-2 py-1 rounded-full">{title}</a
+>

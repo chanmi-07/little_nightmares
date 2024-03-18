@@ -3,6 +3,7 @@ import Nav from "../components/Nav";
 import HeaderLinksData from "../data/header_links.json";
 import AboutData from "../data/about.json";
 import { Icon } from "astro-icon/components";
+import Button from "../components/Button.astro";
 
 type HeaderProps = {
   name: string;
@@ -31,10 +32,6 @@ const About: AboutProps = AboutData;
       Official Site
       <Icon name="mdi:external-link" />
     </a>
-    <a
-      href={About.official_store}
-      target="_blank"
-      class="border border-neutral-400 px-2 py-1 rounded-full">Buy Now</a
-    >
+    <Button link="About.official_store" title="Buy Now" />
   </div>
 </Nav>
