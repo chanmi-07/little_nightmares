@@ -1,0 +1,40 @@
+---
+import Nav from "../components/Nav";
+import HeaderLinksData from "../data/header_links.json";
+import AboutData from "../data/about.json";
+import { Icon } from "astro-icon/components";
+
+type HeaderProps = {
+  name: string;
+  link: string;
+};
+const HeaderLinks: HeaderProps[] = HeaderLinksData;
+
+type AboutProps = {
+  name: string;
+  official_site: string;
+  official_store: string;
+};
+
+const About: AboutProps = AboutData;
+---
+
+<Nav>
+  <div>
+    <a href="/" class="text-2xl font-bold text-gray-800">
+      <Icon name="icon" class="w-8 h-8 inline-block" />
+    </a>
+  </div>
+  <div class="flex gap-6 *:text-neutral-400 hover:*:text-white items-center">
+    {HeaderLinks.map((link) => <a href={link.link}>{link.name}</a>)}
+    <a href={About.official_site} class="flex items-center" target="_blank">
+      Official Site
+      <Icon name="mdi:external-link" />
+    </a>
+    <a
+      href={About.official_store}
+      target="_blank"
+      class="border border-neutral-400 px-2 py-1 rounded-full">Buy Now</a
+    >
+  </div>
+</Nav>
