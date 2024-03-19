@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+import BackgroundImage from "../components/BackgroundImage.astro";
+import AboutData from "../data/about.json";
+import StoresData from "../data/stores.json";
+import Background from "@assets/backgrounds/about.webp";
+import DescriptionImage from "@assets/main/about.webp";
+import { Icon } from "astro-icon/components";
+
+type AboutData = {
+  description: string;
+};
+
+type StoresData = {
+  id: number;
+  name: string;
+  url: string;
+  logo: string;
+};
+
+const aboutData: AboutData = AboutData;
+const storesData: StoresData[] = StoresData;
+---
+
+<section id="about">
+  <BackgroundImage src={Background} alt="Background" width={1920} height={528}>
+    <div class="flex gap-8 max-md:flex-col">
+      <div class="w-full flex flex-col gap-y-8 justify-center">
+        <div class="space-y-4">
+          <div class="text-center flex justify-center">
+            <Icon name="title" class="w-48 h-28" />
+          </div>
+          <p>{aboutData.description}</p>
+        </div>
+        <article class="flex gap-y-4 flex-col">
+          <h4>Available in:</h4>
+          <div class="flex justify-between gap-8 w-full">
+            {
+              storesData.map((store) => (
+                <a href={store.url} target="_blank" rel="noopener noreferrer">
+                  <div class="h-8 *:size-full hover:scale-105 transition-all">
+                    <Icon name={store.logo} />
+                  </div>
+                </a>
+              ))
+            }
+          </div>
+        </article>
+      </div>
+      <div class="w-full relative">
+        <div
+          class="absolute inset-0 [box-shadow:inset_0px_0px_50px_10px_rgba(0,0,0,0.5)] z-10"
+        >
+        </div>
+        <Image src={DescriptionImage} alt="Description Image" class="w-full" />
+      </div>
+    </div>
+  </BackgroundImage>
+</section>

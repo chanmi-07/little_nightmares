@@ -2,9 +2,7 @@
 import Background from "@assets/main/main.webp";
 import Title from "@assets/main/title.webp";
 import { Image } from "astro:assets";
-import About from "../data/about.json";
 import BackgroundImage from "../components/BackgroundImage.astro";
-import { Icon } from "astro-icon/components";
 ---
 
 <section class="">
@@ -15,7 +13,7 @@ import { Icon } from "astro-icon/components";
     height={1080}
     className="h-screen"
   >
-    <div class="w-full flex size-full justify-center items-start">
+    <div class="w-full flex size-full justify-center items-start pt-header">
       <Image src={Title} alt={"Litle Nightmares"} class="w-2/5" />
     </div>
   </BackgroundImage>
