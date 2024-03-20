@@ -9,7 +9,9 @@ type Characteristic = {
 };
 
 const characteristicsData: Characteristic[] = CharacteristicsData;
-const images = import.meta.glob<{ default: ImageMetadata }>("../assets/**");
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "../assets/characteristics/**"
+);
 ---
 
 <section id="characteristics" class="p-4 w-[1600px] max-w-full mx-auto">
