@@ -1,26 +1,26 @@
 [
-    {
-        "id": 1,
-        "name": "Nintendo Switch",
-        "logo": "nintendoSwitch",
-        "url": "https://www.nintendo.com/es-pe/store/products/little-nightmares-complete-edition-switch/"
-    },
-    {
-        "id": 2,
-        "name": "Xbox One",
-        "logo": "xboxOne",
-        "url": "https://www.xbox.com/es-MX/games/store/little-nightmares-complete-edition/c2mtg1sb3s11"
-    },
-    {
-        "id": 3,
-        "name": "Steam",
-        "logo": "steam",
-        "url": "https://store.steampowered.com/app/424840/Little_Nightmares/?l=spanish"
-    },
-    {
-        "id": 4,
-        "name": "PlayStation 4",
-        "logo": "ps4",
-        "url": "https://store.playstation.com/es-pe/product/UP0700-CUSA05929_00-LITTLENIGHTMARES"
-    }
+  {
+    "id": 1,
+    "name": "Nintendo Switch",
+    "logo": "nintendoSwitch",
+    "url": "https://www.nintendo.com/es-pe/store/products/little-nightmares-complete-edition-switch/"
+  },
+  {
+    "id": 2,
+    "name": "Xbox One",
+    "logo": "xboxone",
+    "url": "https://www.xbox.com/es-MX/games/store/little-nightmares-complete-edition/c2mtg1sb3s11"
+  },
+  {
+    "id": 3,
+    "name": "Steam",
+    "logo": "steam",
+    "url": "https://store.steampowered.com/app/424840/Little_Nightmares/?l=spanish"
+  },
+  {
+    "id": 4,
+    "name": "PlayStation 4",
+    "logo": "ps4",
+    "url": "https://store.playstation.com/es-pe/product/UP0700-CUSA05929_00-LITTLENIGHTMARES"
+  }
 ]
