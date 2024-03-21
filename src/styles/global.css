@@ -1,4 +1,21 @@
+@tailwind base;
+
 html
 {
     color-scheme: dark;
+}
+
+
+@layer base
+{
+    :root
+    {
+        --six: 61 47 13;
+        --the_lady: 31 6 18;
+        --the_twins_chefs: 31 6 6;
+        --the_janitor: 9 20 3;
+        --nomes: 57 34 13;
+        --the_guests: 6 17 28;
+        --leeche: 2 0 9;
+    }
 }

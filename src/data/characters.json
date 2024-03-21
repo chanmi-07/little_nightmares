@@ -1,44 +1,44 @@
 [
-    {
-        "id": "six",
-        "name": "Six",
-        "subtitle": "A hungry child",
-        "description": "A mysterious little girl in a yellow raincoat and the protagonist of the first game, Six wakes up deep in the belly of the Maw and must use all her wits and courage to find her way out and some foods to satisfy her hungers."
-    },
-    {
-        "id": "the_lady",
-        "name": "The Lady",
-        "subtitle": "A watchful eye",
-        "description": "The mysterious, graceful proprietress of the Maw, who 'casts a hypnotic spell that keeps the engine running'. Dressed in a mask and kimono, she surveys the guests from her room and haunts Six's dreams. She seems very afraid of mirrors, as all but one present in her residence are broken."
-    },
-    {
-        "id": "the_twin_chefs",
-        "name": "The Twin Chefs",
-        "subtitle": "A pair of brutes",
-        "description": "A pair of strange, saggy-looking chefs, wearing masks and endlessly preparing food in their Kitchen. The Nomes and Six are considered vermin or even potential ingredients for their meals."
-    },
-    {
-        "id": "the_janitor",
-        "name": "The Janitor",
-        "subtitle": "The man with long arms",
-        "description": "The Janitor is a long-armed creature in a coat and hat that apparently collects the things left forgotten in between the rooms of the Maw, as well as catching pests and sending them to the Chefs for processing, and has his own room filled with figures and high shelves. The Janitor catches Six after she succumbs to her hunger and eats the bait from one of his cages, leading to him stalking her throughout his territory."
-    },
-    {
-        "id": "nomes",
-        "name": "Nomes",
-        "subtitle": "Playful oddities",
-        "description": "Strange little oddities clad in white with their faces obscured by conical hoods that resemble mushroom caps. They are treated as vermin in the Maw and the Nest, and naturally are skittish around other creatures. Some of them attempt to befriend the game's protagonists anyway, with mixed results."
-    },
-    {
-        "id": "the_guests",
-        "name": "The Guests",
-        "subtitle": "Full to bursting",
-        "description": "The Guests who board the Maw to feed. They're all fat, disgusting, lazy and possibly the elites of the world outside the Maw. They mostly sit at their table, being busy eating, but if Six enters their field of view, she may end up on their menu."
-    },
-    {
-        "id": "leeches",
-        "name": "Leeches",
-        "subtitle": "Bloodsucking parasites",
-        "description": "Strange black parasites that hang around the wetter, less populated parts of the Maw. They attack in groups to suck the blood out of their victims."
-    }
+  {
+    "id": "six",
+    "name": "Six",
+    "subtitle": "A hungry child",
+    "description": "A mysterious little girl in a yellow raincoat and the protagonist of the first game, Six wakes up deep in the belly of the Maw and must use all her wits and courage to find her way out and some foods to satisfy her hungers."
+  },
+  {
+    "id": "the_lady",
+    "name": "The Lady",
+    "subtitle": "A watchful eye",
+    "description": "The mysterious, graceful proprietress of the Maw, who 'casts a hypnotic spell that keeps the engine running'. Dressed in a mask and kimono, she surveys the guests from her room and haunts Six's dreams. She seems very afraid of mirrors, as all but one present in her residence are broken."
+  },
+  {
+    "id": "the_twins_chefs",
+    "name": "The Twin Chefs",
+    "subtitle": "A pair of brutes",
+    "description": "A pair of strange, saggy-looking chefs, wearing masks and endlessly preparing food in their Kitchen. The Nomes and Six are considered vermin or even potential ingredients for their meals."
+  },
+  {
+    "id": "the_janitor",
+    "name": "The Janitor",
+    "subtitle": "The man with long arms",
+    "description": "The Janitor is a long-armed creature in a coat and hat that apparently collects the things left forgotten in between the rooms of the Maw, as well as catching pests and sending them to the Chefs for processing, and has his own room filled with figures and high shelves. The Janitor catches Six after she succumbs to her hunger and eats the bait from one of his cages, leading to him stalking her throughout his territory."
+  },
+  {
+    "id": "nomes",
+    "name": "Nomes",
+    "subtitle": "Playful oddities",
+    "description": "Strange little oddities clad in white with their faces obscured by conical hoods that resemble mushroom caps. They are treated as vermin in the Maw and the Nest, and naturally are skittish around other creatures. Some of them attempt to befriend the game's protagonists anyway, with mixed results."
+  },
+  {
+    "id": "the_guests",
+    "name": "The Guests",
+    "subtitle": "Full to bursting",
+    "description": "The Guests who board the Maw to feed. They're all fat, disgusting, lazy and possibly the elites of the world outside the Maw. They mostly sit at their table, being busy eating, but if Six enters their field of view, she may end up on their menu."
+  },
+  {
+    "id": "leeche",
+    "name": "Leeche",
+    "subtitle": "Bloodsucking parasites",
+    "description": "Strange black parasites that hang around the wetter, less populated parts of the Maw. They attack in groups to suck the blood out of their victims."
+  }
 ]
