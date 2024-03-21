@@ -8,7 +8,7 @@ const CARD_COLORS =
 {
   'six' : 'from-six/90',
   'the_lady' : 'from-the_lady/90',
-  'the_twins_chefs' : 'from-the_twins_chefs/95',
+  'the_twins_chefs' : 'from-the_twins_chefs/90',
   'the_janitor' : 'from-the_janitor/90',
   'nomes' : 'from-nomes/90',
   'the_guests' : 'from-the_guests/90',
@@ -61,7 +61,7 @@ export default function CardSpotlight(props: Props)
       onBlur={handleBlur}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={`relative aspect-[3/4] flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-10% from-${id}/85 to-70% to-black/85 shadow-2xl`}
+      className={`relative aspect-[3/4] flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-10% ${currentCardColor} to-70% to-black/85 shadow-2xl`}
     >
         <img
             src={CharacterBackground.src}
