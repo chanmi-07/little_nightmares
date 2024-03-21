@@ -19,3 +19,18 @@ html
         --leeche: 2 0 9;
     }
 }
+
+#main-header 
+{
+    animation: blur linear both;
+    animation-timeline: scroll();
+    animation-range: 0 100px;
+}
+  
+@keyframes blur 
+{
+    to 
+    {
+      @apply bg-black/70 backdrop-blur-md;
+    }
+}

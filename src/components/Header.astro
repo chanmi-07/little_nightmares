@@ -1,5 +1,4 @@
 ---
-import Nav from "../components/Nav";
 import HeaderLinksData from "../data/header_links.json";
 import AboutData from "../data/about.json";
 import { Icon } from "astro-icon/components";
@@ -20,18 +19,22 @@ type AboutProps = {
 const About: AboutProps = AboutData;
 ---
 
-<Nav>
-  <div>
-    <a href="/" class="text-2xl font-bold text-gray-800">
-      <Icon name="icon" class="w-8 h-8 inline-block" />
-    </a>
-  </div>
-  <div class="flex gap-6 *:text-neutral-400 hover:*:text-white items-center">
-    {HeaderLinks.map((link) => <a href={link.link}>{link.name}</a>)}
-    <a href={About.official_site} class="flex items-center" target="_blank">
-      Official Site
-      <Icon name="mdi:external-link" />
-    </a>
-    <Button link={About.official_store} title="Buy Now" />
-  </div>
-</Nav>
+<header class="fixed w-screen z-50" id="main-header">
+  <nav
+    class="w-[1600px] max-w-full mx-auto flex justify-between items-center py-2 px-4"
+  >
+    <div>
+      <a href="/" class="text-2xl font-bold text-gray-800">
+        <Icon name="icon" class="w-8 h-8 inline-block" />
+      </a>
+    </div>
+    <div class="flex gap-6 *:text-neutral-400 hover:*:text-white items-center">
+      {HeaderLinks.map((link) => <a href={link.link}>{link.name}</a>)}
+      <a href={About.official_site} class="flex items-center" target="_blank">
+        Official Site
+        <Icon name="mdi:external-link" />
+      </a>
+      <Button link={About.official_store} title="Buy Now" />
+    </div>
+  </nav>
+</header>
