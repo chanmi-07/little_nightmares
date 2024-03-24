@@ -1,0 +1,36 @@
+---
+import Layout from "src/layouts/Layout.astro";
+import { Image } from "astro:assets";
+import CharacterData from "../../data/characters.json";
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  "../../assets/characters/**"
+);
+
+type Character = {
+  id: string;
+  name: string;
+  subtitle: string;
+  description: string;
+};
+// getStaticPaths
+export async function getStaticPaths() {
+  const characters: Character[] = CharacterData;
+  const data = characters.map((character) => ({
+    params: { id: character.id },
+    props: { character },
+  }));
+
+  return data;
+}
+
+const { character } = Astro.props;
+---
+
+<Layout title={`Litle Nightmares - ${character.name}`}>
+  <Image
+    src={images[`../../assets/characters/${character.id}/profile.webp`]()}
+    alt={character.name}
+    transition:name="hero"
+  />
+</Layout>

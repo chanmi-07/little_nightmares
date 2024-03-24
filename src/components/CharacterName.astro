@@ -1,0 +1,19 @@
+---
+import ImgTable from "@assets/main/table.webp";
+import { Image } from "astro:assets";
+
+type Props = {
+  name: string;
+};
+
+const { name } = Astro.props;
+---
+
+<div class="relative flex justify-center">
+  <h3 class="text-center text-3xl mt-auto">{name}</h3>
+  <Image
+    src={ImgTable}
+    alt={name}
+    class="absolute inset-0 -z-10 left-1/2 -translate-x-1/2"
+  />
+</div>

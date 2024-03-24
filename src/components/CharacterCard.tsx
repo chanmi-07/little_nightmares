@@ -54,30 +54,30 @@ export default function CardSpotlight(props: Props)
   };
 
   return (
-    <div
-      ref={divRef}
-      onMouseMove={handleMouseMove}
-      onFocus={handleFocus}
-      onBlur={handleBlur}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      className={`relative aspect-[3/4] flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-10% ${currentCardColor} to-70% to-black/85 shadow-2xl`}
-    >
-        <img
-            src={CharacterBackground.src}
-            alt='Character'
-            className='absolute inset-0 w-full h-full object-cover -z-10'
-        />
       <div
-        className='pointer-events-none absolute -inset-px opacity-0 transition duration-300'
-        style={{
-          opacity,
-          background: `radial-gradient(900px circle at ${position.x}px ${position.y}px, rgb(var(--${id}) / .8), transparent 40%)`,
-        }}
+        ref={divRef}
+        onMouseMove={handleMouseMove}
+        onFocus={handleFocus}
+        onBlur={handleBlur}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        className={`relative aspect-[4/5] flex items-center justify-center overflow-hidden rounded-xl bg-gradient-to-br from-10% ${currentCardColor} to-70% to-black/85 shadow-2xl`}
       >
+          <img
+              src={CharacterBackground.src}
+              alt='Character'
+              className='absolute inset-0 w-full h-full object-cover -z-10'
+          />
+        <div
+          className='pointer-events-none absolute -inset-px opacity-0 transition duration-300'
+          style={{
+            opacity,
+            background: `radial-gradient(900px circle at ${position.x}px ${position.y}px, rgb(var(--${id}) / .8), transparent 40%)`,
+          }}
+        >
+        </div>
+          {children}
       </div>
-      {children}
-    </div>
   );
 };
 

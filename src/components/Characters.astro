@@ -4,6 +4,7 @@ import BackgroundImage from "../components/BackgroundImage.astro";
 import Background from "@assets/backgrounds/characters.webp";
 import CharactersData from "../data/characters.json";
 import CharacterCard from "./CharacterCard";
+import CharacterName from "./CharacterName.astro";
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "../assets/characters/**"
@@ -23,20 +24,25 @@ const characters: Character[] = CharactersData;
     <div class="grid templateColumns-[350px] gap-8">
       {
         characters.map((character) => (
-          <CharacterCard client:visible id={character.id}>
-            <div class="size-full p-4 z-10">
-              <div class="w-full aspect-square flex justify-center">
-                <Image
-                  src={images[
-                    `../assets/characters/${character.id}/profile.webp`
-                  ]()}
-                  alt={character.name}
-                  class="h-full w-auto object-cover"
-                />
+          <a href={`/characters/${character.id}`}>
+            <CharacterCard client:visible id={character.id}>
+              <div class="size-full p-6 z-10 flex flex-col justify-between">
+                <div>
+                  <div class="w-full aspect-square flex justify-center">
+                    <Image
+                      src={images[
+                        `../assets/characters/${character.id}/profile.webp`
+                      ]()}
+                      alt={character.name}
+                      class="h-full w-auto object-cover"
+                      transition:name="hero"
+                    />
+                  </div>
+                </div>
+                <CharacterName name={character.name} />
               </div>
-              <h3 class="text-center text-3xl mt-auto">{character.name}</h3>
-            </div>
-          </CharacterCard>
+            </CharacterCard>
+          </a>
         ))
       }
     </div>

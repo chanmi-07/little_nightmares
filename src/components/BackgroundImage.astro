@@ -6,13 +6,13 @@ type Props = {
   alt: string;
   width: number;
   height: number;
-  className?: null | string;
+  className?: string;
 };
 
 const { src, alt, width, height, className } = Astro.props;
 ---
 
-<div class={["relative", className].join(" ")}>
+<div class:list={["relative", className]}>
   <Image
     src={src}
     alt={alt}
