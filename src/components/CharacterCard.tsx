@@ -1,6 +1,6 @@
 'use client';
 import React, { useRef, useState } from 'react';
-import CharacterBackground from '../assets/backgrounds/character.webp'
+import CharacterBackground from '../assets/backgrounds/character.webp';
 
 type Props = React.ComponentProps<"div">;
 

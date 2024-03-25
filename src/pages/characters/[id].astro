@@ -2,6 +2,8 @@
 import Layout from "src/layouts/Layout.astro";
 import { Image } from "astro:assets";
 import CharacterData from "../../data/characters.json";
+import BackgroundImage from "../../components/BackgroundImage.astro";
+import CharacterBackground from "../../assets/backgrounds/character.webp";
 
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "../../assets/characters/**"
@@ -25,12 +27,44 @@ export async function getStaticPaths() {
 }
 
 const { character } = Astro.props;
+
+const bgColors = {
+  six: "from-six/90",
+  the_lady: "from-the_lady/90",
+  the_twins_chefs: "from-the_twins_chefs/90",
+  the_janitor: "from-the_janitor/90",
+  nomes: "from-nomes/90",
+  the_guests: "from-the_guests/90",
+  leeche: "from-leeche/90",
+};
+
+const bgColor = bgColors[character.id as keyof typeof bgColors];
 ---
 
 <Layout title={`Litle Nightmares - ${character.name}`}>
-  <Image
-    src={images[`../../assets/characters/${character.id}/profile.webp`]()}
+  <BackgroundImage
+    src={CharacterBackground}
     alt={character.name}
-    transition:name="hero"
-  />
+    width={1920}
+    height={1080}
+    className="min-h-dvh relative flex items-center"
+  >
+    <div
+      class=`absolute inset-0 bg-gradient-to-br from-10% ${bgColor} to-70% to-black/85 -z-10`
+    >
+    </div>
+    <div class="size-full max-h-[900px] pt-header flex">
+      <div>
+        <h1 class="text-4xl font-bold text-white">{character.name}</h1>
+        <h2 class="text-2xl text-white">{character.subtitle}</h2>
+        <p class="text-white">{character.description}</p>
+      </div>
+      <Image
+        src={images[`../../assets/characters/${character.id}/profile.webp`]()}
+        alt={character.name}
+        transition:name={character.id}
+        class="h-full w-auto object-cover"
+      />
+    </div>
+  </BackgroundImage>
 </Layout>
