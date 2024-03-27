@@ -1,0 +1,25 @@
+---
+import { Image } from "astro:assets";
+import { Icon } from "astro-icon/components";
+import DeveloperData from "../data/developer.json";
+
+type Developer = {
+  name: string;
+  portfolio: string;
+};
+
+const developer: Developer = DeveloperData;
+
+const importantMessage =
+  "This is an unofficial site. For official information, visit ";
+
+const officialSite = "https://en.bandainamcoent.eu/little-nightmares";
+---
+
+<footer
+  class="max-w-[1600px] mx-auto px-4 py-16 flex flex-col items-center gap-y-4"
+>
+  <Icon name="logo" width={183} height={164} />
+  <p>{importantMessage} <a href={officialSite}>{officialSite}</a></p>
+  <p>By: <a href={developer.portfolio}>{developer.name}</a></p>
+</footer>
