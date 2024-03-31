@@ -1,5 +1,5 @@
 ---
-import type { ImageMetadata } from "astro";
+import { Image } from "astro:assets";
 
 interface Props {
   title?: string;
@@ -9,15 +9,9 @@ interface Props {
 
 const { title, description, image } = Astro.props;
 
-// const images = import.meta.glob<{ default: ImageMetadata }>(
-//   `../../assets/og/*.png`
-// );
 const images = import.meta.glob<{ default: ImageMetadata }>(
   "../../assets/og/**"
 );
-
-let imageUrl = images[`../../assets/og/${image}.png`];
-imageUrl = imageUrl.toString();
 
 const imageType = "image/png";
 ---
@@ -28,8 +22,10 @@ const imageType = "image/png";
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image:type" content={imageType} />
-<meta property="og:image" content={imageUrl} />
-
+<meta
+  property="og:image"
+  content={typeof images[`../../assets/og/${image}.png`]()}
+/>
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
