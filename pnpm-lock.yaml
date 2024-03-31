@@ -41,6 +41,9 @@ dependencies:
   sharp:
     specifier: ^0.33.2
     version: 0.33.2
+  swiper:
+    specifier: ^11.0.7
+    version: 11.0.7
   tailwind:
     specifier: ^4.0.0
     version: 4.0.0
@@ -5450,6 +5453,11 @@ packages:
       css-tree: 2.3.1
       csso: 5.0.5
       picocolors: 1.0.0
+    dev: false
+
+  /swiper@11.0.7:
+    resolution: {integrity: sha512-cDfglW1B6uSmB6eB6pNmzDTNLmZtu5bWWa1vak0RU7fOI9qHjMzl7gVBvYSl34b0RU2N11HxxETJqQ5LeqI1cA==}
+    engines: {node: '>= 4.7.0'}
     dev: false
 
   /tailwind@4.0.0:

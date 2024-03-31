@@ -41,7 +41,11 @@ const bgColors = {
 const bgColor = bgColors[character.id as keyof typeof bgColors];
 ---
 
-<Layout title={`Litle Nightmares - ${character.name}`}>
+<Layout
+  title={character.name}
+  description={character.subtitle}
+  image={character.id}
+>
   <BackgroundImage
     src={CharacterBackground}
     alt={character.name}

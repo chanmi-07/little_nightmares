@@ -6,9 +6,18 @@ import Characteristics from "@components/Characteristics.astro";
 import Characters from "@components/Characters.astro";
 import Sponsor from "@components/Sponsor.astro";
 import Footer from "@components/Footer.astro";
+
+import AboutData from "src/data/about.json";
+
+type About = {
+  name: string;
+  description: string;
+};
+
+const about: About = AboutData;
 ---
 
-<Layout title="Litle Nightmares">
+<Layout title={about.name} description={about.description} image="main">
   <Hero />
   <About />
   <Characteristics />
