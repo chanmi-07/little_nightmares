@@ -44,7 +44,7 @@ const bgColor = bgColors[character.id as keyof typeof bgColors];
 <Layout
   title={character.name}
   description={character.subtitle}
-  image={`${import.meta.env.SITE}/src/assets/og/${character.id}.png`}
+  image={character.id}
 >
   <BackgroundImage
     src={CharacterBackground}

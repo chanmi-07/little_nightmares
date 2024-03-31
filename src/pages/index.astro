@@ -17,11 +17,7 @@ type About = {
 const about: About = AboutData;
 ---
 
-<Layout
-  title={about.name}
-  description={about.description}
-  image={`${import.meta.env.SITE}/src/assets/og/main.png`}
->
+<Layout title={about.name} description={about.description} image="main">
   <Hero />
   <About />
   <Characteristics />
