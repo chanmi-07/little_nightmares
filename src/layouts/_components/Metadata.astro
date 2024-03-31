@@ -17,7 +17,7 @@ const imagesURL = import.meta.glob<{ default: ImageMetadata }>(
 // `../../assets/og/${image}.png`
 // );
 
-const currentImage = `${import.meta.env.SITE}/assets/og/${image}.png`;
+const currentImage = `${import.meta.env.SITE}//assets/og/${image}.png`;
 // const currentImage = `../../../assets/og/${image}.png`;
 
 const imageType = "image/png";
@@ -29,7 +29,7 @@ const imageType = "image/png";
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:image:type" content={imageType} />
-<meta property="og:image" content={currentImage} />
+<meta property="og:image" content={image} />
 
 <!-- <meta name='twitter:card' content='summary_large_image' />
 <meta name='twitter:title' content={title} />
