@@ -6,5 +6,6 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), tailwind(), icon()]
+  integrations: [react(), tailwind(), icon()],
+  site: 'https://little-nightmares.vercel.app'
 });
