@@ -20,8 +20,8 @@ const characters: Character[] = CharactersData;
 
 <section id="characters">
   <BackgroundImage src={Background} alt="Background" width={1920} height={528}>
-    <h2 class="text-4xl text-center">Characters</h2>
-    <div class="grid templateColumns-[350px] gap-8">
+    <h2 class="text-4xl text-center mb-4">Characters</h2>
+    <div class="grid templateColumns-[300px] gap-8">
       {
         characters.map((character) => (
           <a href={`/characters/${character.id}`}>
